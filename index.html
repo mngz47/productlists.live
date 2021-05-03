@@ -8,12 +8,12 @@
 
 var connection = new ActiveXObject("ADODB.Connection") ;
 
-var connectionstring="Data Source=<server>;Initial Catalog=<catalog>;User ID=<user>;Password=<password>;Provider=SQLOLEDB";
+var connectionstring="Data Source=d6rii63wp64rsfb5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;User ID=muce70z5ukkwpv5d;Password=bqvn5jp04wlmxu64;Provider=zyo1oodysira7ro5";
 
 connection.Open(connectionstring);
 var rs = new ActiveXObject("ADODB.Recordset");
 
-rs.Open("SELECT * FROM table", connection);
+rs.Open("SELECT * FROM product", connection);
 rs.MoveFirst
 while(!rs.eof)
 {
